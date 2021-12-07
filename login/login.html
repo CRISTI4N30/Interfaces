@@ -4,11 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
 <body>
-    
+    <div class="contenedor">
+        <div class="login-bloque">
+            <div class="flecha">
+                <a href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1" />
+                    </svg>
+                </a>
+            </div>
+            <div class="logo">
+                <img draggable="false" src="../img/logo.jpg" alt="Logo">
+            </div>
+            <div class="formulario">
+                <h1>Inicio de sesión</h1>
+                <form action="">
+                    <div class="identificacion">
+                        <label for="id">Identificación</label>
+                        <input type="number" min="0" id="id">
+                    </div>
+                    <div class="pass">
+                        <label for="pass">Contraseña</label>
+                        <div class="pass-field">
+                            <input type="password" id="pass">
+                            <div class="eye">
+                                <button id="reveal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <circle cx="12" cy="12" r="2" />
+                                    <path d="M22 12c-2.667 4.667 -6 7 -10 7s-7.333 -2.333 -10 -7c2.667 -4.667 6 -7 10 -7s7.333 2.333 10 7" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" name="enviar" value="Iniciar sesión">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="reveal.js"></script>
 </body>
 </html>
