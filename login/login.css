@@ -36,6 +36,11 @@
 .login-bloque .flecha a svg {
     stroke: #111;
     width: 50px;
+    transition: .25s ease;
+}
+
+.login-bloque .flecha a:hover > svg {
+    transform: rotate(20deg);
 }
 
 .login-bloque .logo {
@@ -144,7 +149,16 @@
 .login-bloque .formulario form .pass .pass-field .eye svg {
     stroke: var(--color-icon);
     width: 40px;
-    transform: translateX(-2px);
+    transform: translateX(-2px) rotate(40deg);
+    transition: .25s ease;
+}
+
+.login-bloque .formulario form .pass .pass-field .eye .svgEyeLash {
+    display: none;
+}
+
+.rotate-svg {
+    transform: rotate(0deg) !important;
 }
 
 .login-bloque .formulario form .pass .pass-field input::-ms-reveal {
