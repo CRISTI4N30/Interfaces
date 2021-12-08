@@ -96,10 +96,15 @@
     border-radius: 20px;
     border: none;
     letter-spacing: 5px;
+    transition: .25s ease;
+}
+
+.login-bloque .formulario form .identificacion input:focus {
+    outline: 4px solid var(--color-1);
 }
 
 .login-bloque .formulario form .identificacion input::-webkit-inner-spin-button, .login-bloque .formulario form .identificacion input::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+    display: none;
     margin: 0;
 }
 
@@ -125,7 +130,14 @@
     border-radius: 20px 0 0 20px;
     border: none;
     letter-spacing: 5px;
+    transition: .25s ease;
 }
+
+.login-bloque .formulario form .pass .pass-field input:focus, .login-bloque .formulario form .pass .pass-field input:focus ~ .eye {
+    outline: 4px solid var(--color-1);
+}
+
+
 
 .login-bloque .formulario form .pass .pass-field .eye {
     background-color: var(--color-1);
@@ -134,6 +146,7 @@
     align-items: center;
     border-radius: 0 20px 20px 0;
     min-width: 15%;
+    transition: .25s ease;
 }
 
 .login-bloque .formulario form .pass .pass-field .eye button {
@@ -175,4 +188,11 @@
     background-color: var(--color-1);
     color: var(--color-icon);
     cursor: pointer;
+    transition: .25s ease;
+}
+
+.login-bloque .formulario form .submit input:hover {
+    box-shadow: 2px 2px var(--color-2);
+    transform: translate(-2px, -2px);
+    text-shadow: 1px 1px 2px var(--color-4);
 }
